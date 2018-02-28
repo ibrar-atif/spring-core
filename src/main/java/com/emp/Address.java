@@ -1,8 +1,15 @@
 package com.emp;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Address {
 	
 	private String city;
+	
+	public Address(){
+		System.out.println("Address");
+	}
 
 	public String getCity() {
 		return city;

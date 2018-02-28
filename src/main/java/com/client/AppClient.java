@@ -11,12 +11,18 @@ import com.emp.Employee;
 public class AppClient {
 	
 	public static void main(String aa[]){
-		//ApplicationContext context = new ClassPathXmlApplicationContext(
-		//		"beans.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext(
+				"beans.xml");
 		
-		BeanFactory beanf = new XmlBeanFactory (new ClassPathResource("beans.xml"));
-		//Employee emp = (Employee) context.getBean("firstBean");
+		//BeanFactory beanf = new XmlBeanFactory (new ClassPathResource("beans.xml"));
+		//Employee emp = (Employee) beanf.getBean("emp");
 		
+		/*Employee emp = (Employee) context.getBean("emp");
+		System.out.println(emp.getAddress());
+		System.out.println(emp.getBeanName());
+		
+		System.out.println(emp.getType());
+		*/
 		
 		
 		

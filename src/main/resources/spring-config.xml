@@ -12,25 +12,18 @@
 	http://www.springframework.org/schema/mvc
 	http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd">
 
-	 <context:annotation-config></context:annotation-config>	 
-	   <context:component-scan base-package="com.emp"></context:component-scan> 
-	<bean id="demo" class="com.emp.Demo">
-	<constructor-arg name="s" value="const"></constructor-arg>
-	</bean>
-	 
-	
-	<bean id= "emp" class="com.emp.Employee">
-	<!-- <property name="address" ref="address"></property>
-	<property name="beanName" value="myBean"></property> -->
-	</bean>
-	
-	<bean id="address" class="com.emp.Address"></bean>  
-     
-     <context:property-placeholder location="classpath*:domain.properties"/>
-     
-     <bean id="bean1" class="com.cycle.LifeCycle">
-  
-     </bean>
 
+	<bean id = "emp1" class="com.feb28.Emp1">
+	<property name="name" value="srini"></property>
+	<property name="address" ref="address2"></property>
+	<property name="company" ref="com"></property>
+	</bean>
+	
+	<bean id ="address2" class="com.feb28.Add1"></bean>
+	
+	<bean id ="address3" class="com.feb28.Add1"></bean>
+	
+	<bean id="com" class="com.feb28.Company"></bean>
+	
 
 </beans>
