@@ -21,7 +21,13 @@ public class Client {
 		
 		System.out.println(e.getAddress());
 		
+		System.out.println(e.getPayment());
+		
 		System.out.println(e.getCompany());
+		
+		
+		System.out.println(Emp1.getContext());
+	
 	}
 
 	
