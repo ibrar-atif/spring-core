@@ -12,8 +12,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 @Scope("singleton")
 public class Emp1 implements BeanNameAware , ApplicationContextAware,InitializingBean,DisposableBean{
 	

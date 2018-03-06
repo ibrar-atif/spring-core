@@ -16,6 +16,10 @@ public class Client {
 		System.out.println(e.getAddress());
 		
 		System.out.println(e.getCompany());
+		
+		OuterBean out = (OuterBean) context.getBean("outer");
+		
+		System.out.println(out.getInnerBean());
 	}
 
 	
