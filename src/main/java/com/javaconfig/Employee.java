@@ -1,12 +1,13 @@
 package com.javaconfig;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component("emp")
 public class Employee {
 
-	public Employee(){
-		
-	}
+	
+	@Autowired
 	public Employee(Address address){
 		this.address = address;
 		System.out.println("Java Config Employee");

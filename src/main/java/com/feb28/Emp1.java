@@ -29,5 +29,9 @@ public class Emp1 {
 	public Emp1(){
 		System.out.println("Employee created");
 	}
+	
+	public int add(int a,int b){
+		return a+b;
+	}
 
 }

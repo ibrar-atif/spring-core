@@ -1,12 +1,12 @@
 package com.client;
 
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.ClassPathResource;
 
-import com.emp.Employee;
+
+import com.emp.DemoClass;
+
 
 public class AppClient {
 	
@@ -17,12 +17,9 @@ public class AppClient {
 		//BeanFactory beanf = new XmlBeanFactory (new ClassPathResource("beans.xml"));
 		//Employee emp = (Employee) beanf.getBean("emp");
 		
-		/*Employee emp = (Employee) context.getBean("emp");
-		System.out.println(emp.getAddress());
-		System.out.println(emp.getBeanName());
-		
-		System.out.println(emp.getType());
-		*/
+		DemoClass demo = (DemoClass) context.getBean("demoClass");
+		System.out.println(demo.getName());
+	
 		
 		
 		

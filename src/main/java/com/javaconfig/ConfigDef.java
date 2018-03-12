@@ -6,24 +6,16 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-//@ComponentScan("com.javaconfig")
+@ComponentScan("com.javaconfig")
 public class ConfigDef {
 
-	@Autowired
-	Address address;
+
 	
 	
-	@Bean(name="emp")
-	public Employee getEmployee(){
-		
-		Employee emp =  new Employee();
-		return emp;
-	}
-	
-	@Bean(name="address")
+	/*@Bean(name="address")
 	public Address getAddress(){
 		return new Address();
-	}
+	}*/
 	
 	
 	
